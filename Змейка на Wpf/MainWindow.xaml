@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Змейка_на_Wpf"
         mc:Ignorable="d"
-        Title="snake" Height="500" Width="800" MinWidth="300" MinHeight="300" Background="{StaticResource BackgroundColor}" Foreground="{StaticResource TextColor}" FontFamily="{StaticResource MainFont}" WindowStartupLocation="CenterScreen" PreviewKeyDown="Window_PreviewKeyDown" KeyDown="Window_KeyDown" >
+        Title="Snake" Height="500" Width="800" MinWidth="300" MinHeight="300" Background="{StaticResource BackgroundColor}" Foreground="{StaticResource TextColor}" FontFamily="{StaticResource MainFont}" WindowStartupLocation="CenterScreen" KeyDown="Window_KeyDown" >
     <Viewbox>
         <Grid>
             <Grid.RowDefinitions>
@@ -21,7 +21,7 @@
                 <TextBlock x:Name="OverlayText" Text="PRESS ANY KEY TO START" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
             </Border>
             <Border x:Name="Pause" Grid.Row="1" Background="{StaticResource OverlayColor}" Width="{Binding Path=ActualWidth, ElementName=GridBorder}" Height="{Binding Path=ActualHeight, ElementName=GridBorder}" Margin="{Binding Path=Margin, ElementName=GridBorder}" RenderOptions.EdgeMode="Aliased">
-                <TextBlock x:Name="PauseText" Text="PRESS ESCAPE TO CONTINUE" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
+                <TextBlock x:Name="PauseText" Text="PRESS ESCAPE TO CONTINUE OR PRESS ENTER TO EXIT" FontSize="26" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"/>
             </Border>
             <TextBlock x:Name="BestText" HorizontalAlignment="Left" VerticalAlignment="Center" Text="BEST 0" FontSize="22" Margin="25,0,0,0"/>
         </Grid>
